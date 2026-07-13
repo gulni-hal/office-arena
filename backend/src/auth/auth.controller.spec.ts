@@ -12,6 +12,7 @@ describe('AuthController', () => {
       providers: [
         AuthService,
         // Controller'ın ayağa kalkması için AuthService'in ihtiyaç duyduğu JwtService'i taklit ediyoruz
+        //// deneme icin deneme icin
         {
           provide: JwtService,
           useValue: { signAsync: jest.fn() }, 
